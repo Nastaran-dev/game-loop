@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>game</title>
+<link rel="stylesheet" href="css/output.css" />
+<style>
+  .img-IceCream {
+    width: 100px;
+    position: absolute;
+    z-index: 1;
+    top: -60px;
+    user-select: none;
+  }
+
+@media (max-width: 768px) {
+.img-IceCream {
+width: 60px;
+}
+}
+
+@media (max-width: 480px) {
+.img-IceCream {
+width: 50px;
+}
+}
+
+ </style>
+
+</head>
+<body class="w-full overflow-x-hidden anime1">
+  <div class=" bg-no-repeat h-[100vh]" id="bg">
+    <div id="Myalert" class="w-full h-[100vh] items-center justify-center relative backdrop-blur-[5px] anime hidden z-[999] ">
+  <img src="img/ChatGPT Image Nov 25, 2025, 11_15_33 AM (1).png" alt="" class="w-[400px] relative sm:w-[250px] md:w-[400px]" />
+  <button id="okAlert" class="top-[57%] w-[150px] rounded-[30px] bg-[#F3813D] py-[10px] px-[95px] border-4 flex justify-center items-center font-extrabold absolute border-[#572E1F] text-[#FCECD3] text-[35px] shadow1 sm:py-[3px] md:py-[10px]  ">OK</button>
+</div>
+
+<div id="lozer1" class="w-full h-[100vh] items-center justify-center relative backdrop-blur-[5px] anime hidden flex-col z-[999]">
+  <img src="img/lozer.png" alt="" class="sm:w-[100px] md:w-auto">
+  <div class="w-[70%] bg-[#FCECD3] border-4 text-[#572e1c] border-[#572E1F] rounded-3xl h-[200px] text-[50px] sm:text-[40px] capitalize text-center relative flex justify-center items-center sm:w-[30%] sm:h-[150px] xl:w-1/4 font-extrabold lg:w-[30%] md:w-[40%]">game over</div>
+  <div id="lozer" class="w-[30%] p-[10px] rounded-3xl border-4 border-[#572E1F] text-[#FCECD3] bg-[#F3813D] absolute top-[70%] flex justify-center items-center sm:w-[15%] text-[20px] sm:top-[73%] md:top-[65%] xl:w-[7%] shadow1 font-extrabold lg:w-[10%] cursor-pointer">OK</div>
+</div>
+
+<img id="basket" src="img/basket1.png" alt="" class="w-[100px] absolute bottom-0 left-[50%] translate-[-50%] z-[999] m-auto md:w-[200px]" />
+<div class="w-[100px] p-[20px] text-[#572e1c] rounded-t-3xl bg-[#FCECD3] text-[20px] absolute left-0 top-0 m-[10px] flex items-center z-[999] justify-center font-bold capitalize border-[#572E1F] border-4">
+  Score:<span id="score">0</span>
+</div>
+
+<audio src="audio/Bubbles Sound.mp3" id="Bubbles"></audio> <audio src="audio/explosion-01.mp3" id="Bomb"></audio> <audio src="audio/You-Win-Voice-Sound-Effect.mp3" id="Winner"></audio> <audio src="audio/Game-Over-Voice-Sound-Effect.mp3" id="Lozer"></audio>
+  </div>
+<!-- fooooooooooooooooooooter -->
+ <footer class="relative flex items-center justify-center w-full min-h-screen p-10 overflow-hidden gradientPink ">
+  
+  <!-- اورب‌ها (بزرگ‌تر) -->
+  <div class="absolute w-[520px] h-[520px] bg-pink-400 rounded-full filter blur-[150px] opacity-50 animate-float -top-14 -left-14"></div>
+  <div class="absolute w-[520px] h-[520px] bg-pink-600 rounded-full filter blur-[150px] opacity-50 animate-float2 -bottom-14 -right-14"></div>
+
+  <!-- کارت (بزرگ‌تر) -->
+  <div class="relative w-full max-w-md p-8 rounded-3xl bg-white/10 backdrop-blur-xl border border-pink-200/25 shadow-[0_0_45px_rgba(255,128,200,0.7),0_0_90px_rgba(255,0,140,0.4),inset_0_0_22px_rgba(255,255,255,0.15)] text-center animate-cardFloat">
+    
+    <!-- تصویر پروفایل (بزرگ‌تر) -->
+    <figure class="w-[255px] h-[255px] mx-auto rounded-3xl overflow-hidden border-4 border-pink-200/70 shadow-[0_0_45px_rgba(255,150,230,0.9)] animate-imgGlow ">
+      <img src="img/n.jpg" alt="profile" class="object-cover w-full h-full transition-transform duration-500 hover:scale-110 hover:rotate-3 " />
+    </figure>
+
+    <!-- نام و عنوان (بزرگ‌تر) -->
+    <h1 class="mt-6 text-3xl text-pink-100 sm:text-4xl drop-shadow-lg">Nastaran Mohammadi</h1>
+    <h3 class="mt-2 text-lg sm:text-xl text-pink-200/90">Front-End Developer</h3>
+
+    <!-- شبکه‌های اجتماعی (بزرگ‌تر) -->
+    <div class="flex justify-center gap-6 mt-7 sm:gap-7">
+      <a href="https://github.com/nastaran-dev" target="_blank" class="w-14 h-14 rounded-full bg-pink-200/20 backdrop-blur-md flex items-center justify-center text-white text-xl shadow-[0_0_20px_rgba(255,170,230,0.4),inset_0_0_12px_rgba(255,255,255,0.25)] hover:scale-110 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(255,240,255,1),0_0_60px_rgba(255,100,200,0.9),inset_0_0_22px_rgba(255,255,255,0.5)] transition-all duration-300">
+       <img src="img/github-fill.svg" alt="" class="w-9">
+      </a>
+
+      <a href="https://www.linkedin.com/in/nastaran-mohammadi-1515a8382?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="w-14 h-14 rounded-full bg-pink-200/20 backdrop-blur-md flex items-center justify-center text-pink-100 text-xl shadow-[0_0_20px_rgba(255,170,230,0.4),inset_0_0_12px_rgba(255,255,255,0.25)] hover:scale-110 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(255,240,255,1),0_0_60px_rgba(255,100,200,0.9),inset_0_0_22px_rgba(255,255,255,0.5)] transition-all duration-300">
+       <img src="img/linkedin-box-fill.svg" alt="" class="rounded-full w-9">
+      </a>
+
+      <a href="https://instagram.com/nastaran__dev" target="_blank" class="w-14 h-14 rounded-full bg-pink-200/20 backdrop-blur-md flex items-center justify-center text-pink-300 text-xl shadow-[0_0_20px_rgba(255,170,230,0.4),inset_0_0_12px_rgba(255,255,255,0.25)] hover:scale-110 hover:-translate-y-2 hover:shadow-[0_0_35px_rgba(255,240,255,1),0_0_60px_rgba(255,100,200,0.9),inset_0_0_22px_rgba(255,255,255,0.5)] transition-all duration-300">
+       <img src="img/instagram-fill.svg" alt="" class="w-10 rounded-full">
+      </a>
+    </div>
+
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

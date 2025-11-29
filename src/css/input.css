@@ -1,0 +1,53 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+@layer base{
+     body{ 
+        font-family: "Playwrite NO", cursive;
+    }
+    #bg{
+       background: linear-gradient(to bottom, #ffe6f0 0%, #ff66b2 100%);
+    }
+}
+
+  @keyframes popin {
+        0% {
+          transform: scale(0.5);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      } 
+.anime{
+   animation: popin 0.3s ease-out;
+ }
+  @keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+.anime1{
+    animation: bgAnimation 12s ease infinite;
+}
+
+.shadow1{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+            rgba(0, 0, 0, 0.4) 0px 7px 13px -3px,
+            rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
+
+}
+ .gradientPink {
+    background: radial-gradient(circle, #ffb5da, #ff2d8a, #8a0047);
+  }
+
+
+
+
+
+
